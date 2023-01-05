@@ -12,6 +12,7 @@
 		19910D0D2965B13E007EA578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19910D0C2965B13E007EA578 /* Assets.xcassets */; };
 		19910D102965B13E007EA578 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19910D0F2965B13E007EA578 /* Preview Assets.xcassets */; };
 		19910D1E29670D73007EA578 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19910D1D29670D73007EA578 /* EventModel.swift */; };
+		19910D2029670F9C007EA578 /* NetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19910D1F29670F9C007EA578 /* NetworkWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		19910D0C2965B13E007EA578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19910D0F2965B13E007EA578 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		19910D1D29670D73007EA578 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		19910D1F29670F9C007EA578 /* NetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				19910D082965B13A007EA578 /* EventAppApp.swift */,
 				19910D0A2965B13A007EA578 /* ContentView.swift */,
 				19910D1D29670D73007EA578 /* EventModel.swift */,
+				19910D1F29670F9C007EA578 /* NetworkWorker.swift */,
 				19910D0C2965B13E007EA578 /* Assets.xcassets */,
 				19910D0E2965B13E007EA578 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				19910D0B2965B13A007EA578 /* ContentView.swift in Sources */,
 				19910D1E29670D73007EA578 /* EventModel.swift in Sources */,
+				19910D2029670F9C007EA578 /* NetworkWorker.swift in Sources */,
 				19910D092965B13A007EA578 /* EventAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
