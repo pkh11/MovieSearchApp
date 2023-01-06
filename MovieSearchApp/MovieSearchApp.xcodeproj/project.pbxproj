@@ -11,17 +11,17 @@
 		19910D0B2965B13A007EA578 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19910D0A2965B13A007EA578 /* ContentView.swift */; };
 		19910D0D2965B13E007EA578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19910D0C2965B13E007EA578 /* Assets.xcassets */; };
 		19910D102965B13E007EA578 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19910D0F2965B13E007EA578 /* Preview Assets.xcassets */; };
-		19910D1E29670D73007EA578 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19910D1D29670D73007EA578 /* EventModel.swift */; };
+		19910D1E29670D73007EA578 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19910D1D29670D73007EA578 /* Movie.swift */; };
 		19910D2029670F9C007EA578 /* NetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19910D1F29670F9C007EA578 /* NetworkWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19910D052965B13A007EA578 /* EventApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19910D052965B13A007EA578 /* MovieSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19910D082965B13A007EA578 /* EventAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAppApp.swift; sourceTree = "<group>"; };
 		19910D0A2965B13A007EA578 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		19910D0C2965B13E007EA578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19910D0F2965B13E007EA578 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		19910D1D29670D73007EA578 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		19910D1D29670D73007EA578 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		19910D1F29670F9C007EA578 /* NetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,7 +39,7 @@
 		19910CFC2965B13A007EA578 = {
 			isa = PBXGroup;
 			children = (
-				19910D072965B13A007EA578 /* EventApp */,
+				19910D072965B13A007EA578 /* MovieSearchApp */,
 				19910D062965B13A007EA578 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,22 +47,22 @@
 		19910D062965B13A007EA578 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				19910D052965B13A007EA578 /* EventApp.app */,
+				19910D052965B13A007EA578 /* MovieSearchApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		19910D072965B13A007EA578 /* EventApp */ = {
+		19910D072965B13A007EA578 /* MovieSearchApp */ = {
 			isa = PBXGroup;
 			children = (
 				19910D082965B13A007EA578 /* EventAppApp.swift */,
 				19910D0A2965B13A007EA578 /* ContentView.swift */,
-				19910D1D29670D73007EA578 /* EventModel.swift */,
+				19910D1D29670D73007EA578 /* Movie.swift */,
 				19910D1F29670F9C007EA578 /* NetworkWorker.swift */,
 				19910D0C2965B13E007EA578 /* Assets.xcassets */,
 				19910D0E2965B13E007EA578 /* Preview Content */,
 			);
-			path = EventApp;
+			path = MovieSearchApp;
 			sourceTree = "<group>";
 		};
 		19910D0E2965B13E007EA578 /* Preview Content */ = {
@@ -76,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		19910D042965B13A007EA578 /* EventApp */ = {
+		19910D042965B13A007EA578 /* MovieSearchApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 19910D132965B13E007EA578 /* Build configuration list for PBXNativeTarget "EventApp" */;
+			buildConfigurationList = 19910D132965B13E007EA578 /* Build configuration list for PBXNativeTarget "MovieSearchApp" */;
 			buildPhases = (
 				19910D012965B13A007EA578 /* Sources */,
 				19910D022965B13A007EA578 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = EventApp;
+			name = MovieSearchApp;
 			productName = EventApp;
-			productReference = 19910D052965B13A007EA578 /* EventApp.app */;
+			productReference = 19910D052965B13A007EA578 /* MovieSearchApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 19910D002965B13A007EA578 /* Build configuration list for PBXProject "EventApp" */;
+			buildConfigurationList = 19910D002965B13A007EA578 /* Build configuration list for PBXProject "MovieSearchApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				19910D042965B13A007EA578 /* EventApp */,
+				19910D042965B13A007EA578 /* MovieSearchApp */,
 			);
 		};
 /* End PBXProject section */
@@ -144,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19910D0B2965B13A007EA578 /* ContentView.swift in Sources */,
-				19910D1E29670D73007EA578 /* EventModel.swift in Sources */,
+				19910D1E29670D73007EA578 /* Movie.swift in Sources */,
 				19910D2029670F9C007EA578 /* NetworkWorker.swift in Sources */,
 				19910D092965B13A007EA578 /* EventAppApp.swift in Sources */,
 			);
@@ -274,7 +274,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"EventApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MovieSearchApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -287,7 +287,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pkh.EventApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pkh.MovieSearchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -302,7 +302,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"EventApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MovieSearchApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -315,7 +315,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pkh.EventApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pkh.MovieSearchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		19910D002965B13A007EA578 /* Build configuration list for PBXProject "EventApp" */ = {
+		19910D002965B13A007EA578 /* Build configuration list for PBXProject "MovieSearchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				19910D112965B13E007EA578 /* Debug */,
@@ -335,7 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		19910D132965B13E007EA578 /* Build configuration list for PBXNativeTarget "EventApp" */ = {
+		19910D132965B13E007EA578 /* Build configuration list for PBXNativeTarget "MovieSearchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				19910D142965B13E007EA578 /* Debug */,

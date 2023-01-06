@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct EventModel: Identifiable {
+struct Movie: Identifiable {
     var eventId: String
     var img: String
     var convertImgUrl: String
