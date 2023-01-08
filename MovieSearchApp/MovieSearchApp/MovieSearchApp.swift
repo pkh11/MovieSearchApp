@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct MovieSearchApp: App {
+    let networkWorker: NetworkWorker = NetworkWorker()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
