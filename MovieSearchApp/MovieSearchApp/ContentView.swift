@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var movieViewModel: MovieViewModel = MovieViewModel()
-    @State var keyword: String = "test"
+    @State var keyword: String = ""
     
     var body: some View {
         NavigationStack {
@@ -21,11 +21,10 @@ struct ContentView: View {
             .navigationTitle("영화검색")
         }
         .searchable(text: $keyword)
-        .onAppear(perform: movieViewModel.fetchMovieList)
-        .onSubmit {
-            movieViewModel.fetchMovieList()
-        }
-        
+        .onChange(of: keyword) { newValue in
+            print("\(newValue)")
+            movieViewModel.fetchMovieList(query: newValue, page: 1)
+        }   
     }
 }
 

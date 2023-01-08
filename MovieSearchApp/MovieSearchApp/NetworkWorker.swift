@@ -5,7 +5,7 @@
 //  Created by Kyoon Ho Park on 2023/01/05.
 //
 
-import Foundation
+import SwiftUI
 
 final class NetworkWorker {
     private let session: URLSession
@@ -17,13 +17,13 @@ final class NetworkWorker {
         self.session = session
     }
     
-    internal func movieList(completion: @escaping ([Movie]) -> Void) {
+    internal func movieList(query: String, page: Int, completion: @escaping ([Movie]) -> Void) {
         // url component 생성
         var urlComponents = URLComponents(string: "https://openapi.naver.com/v1/search/movie.json")
         
         // query items
-        let query = URLQueryItem(name: "query", value: "mission")
-        let start = URLQueryItem(name: "start", value: "1")
+        let query = URLQueryItem(name: "query", value: query)
+        let start = URLQueryItem(name: "start", value: "\(page)")
         urlComponents?.queryItems = [query, start]
         
         guard let url = urlComponents?.url else { return }
