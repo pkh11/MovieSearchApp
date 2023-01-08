@@ -7,24 +7,28 @@
 
 import Foundation
 
-struct Movie: Identifiable {
-    var eventId: String
-    var img: String
-    var convertImgUrl: String
-    var logo: String
-    var extUrl: String
-    var evtDesc: String
-    var evtTitle: String
-    var evtWeight: Int = 0
-    var clientName: String
-    var evtType: String
-//    var convertEvtType: Promotion.Types = .ad
-    var dpStart: String
-    var dpEnd: String
-//    var dpState: Promotion.State = .end
-//    var promotionPage: Promotion.Page = .start
-//    var promotionLayer: Promotion.Layer = .none
-    var oldId: Int = 0
+struct Movie: Codable, Identifiable {
+    let title: String
+    let link: String
+    let image: String
+    let subTitle: String
+    let pubDate: String
+    let director: String
+    let actor: String
+    let userRating: String
     
-    var id: UUID
+    // 네이버 영화검색 오픈 API에서 id값이 없어서 임시로 구현
+    // id = "code"
+    var id: String { link.components(separatedBy: "=").last ?? "" }
+    
+    enum CodingKeys: String, CodingKey {
+        case title
+        case link
+        case image
+        case subTitle = "subtitle"
+        case pubDate
+        case director
+        case actor
+        case userRating
+    }
 }
