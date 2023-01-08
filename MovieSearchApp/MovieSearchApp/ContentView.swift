@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var movieViewModel: MovieViewModel = MovieViewModel()
+    @State var keyword: String = "test"
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                ForEach(movieViewModel.movieList) { movie in
+                    Text(movie.title)
+                }
+            }
+            .navigationTitle("영화검색")
         }
-        .padding()
+        .searchable(text: $keyword)
+        .onAppear(perform: movieViewModel.fetchMovieList)
+        .onSubmit {
+            movieViewModel.fetchMovieList()
+        }
+        
     }
 }
 

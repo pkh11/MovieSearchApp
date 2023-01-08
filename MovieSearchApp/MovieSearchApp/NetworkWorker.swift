@@ -15,10 +15,9 @@ final class NetworkWorker {
     
     init(session: URLSession = .shared) {
         self.session = session
-        eventList()
     }
     
-    internal func eventList() {
+    internal func movieList(completion: @escaping ([Movie]) -> Void) {
         // url component 생성
         var urlComponents = URLComponents(string: "https://openapi.naver.com/v1/search/movie.json")
         
@@ -40,7 +39,7 @@ final class NetworkWorker {
             
             do {
                 let responseModel = try JSONDecoder().decode(ResponseModel.self, from: data)
-                print(responseModel)
+                completion(responseModel.items)
             } catch {
                 fatalError("Error")
             }
