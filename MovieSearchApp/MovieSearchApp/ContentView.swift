@@ -18,7 +18,7 @@ struct ContentView: View {
                 if isSearching {
                     List {
                         ForEach(movieViewModel.movieList) { movie in
-                            Text(movie.title)
+                            MovieItemView(movie: movie)
                         }
                     }
                 } else {
