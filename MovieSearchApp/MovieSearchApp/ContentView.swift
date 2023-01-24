@@ -19,19 +19,28 @@ struct ContentView: View {
                     List {
                         ForEach(movieViewModel.movieList) { movie in
                             MovieItemView(movie: movie)
+                                .onAppear {
+                                    if self.movieViewModel.movieList.last == movie {
+                                        print("마지막")
+                                    }
+                                }
                         }
                     }
                 } else {
                     Text("데이터 없음")
                 }
-            }.navigationTitle("영화검색")
-        }
-        .navigationTitle("영화검색")
-        .searchable(text: $keyword)
-        .onChange(of: keyword) { newValue in
-            print("\(newValue)")
-            isSearching = true
-            movieViewModel.fetchMovieList(query: newValue, page: 1)
+            }
+            .navigationTitle("영화검색")
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                Button("Add") {}
+            }
+            .searchable(text: $keyword, placement: .navigationBarDrawer(displayMode: .always))
+            .onChange(of: keyword) { newValue in
+                print("\(newValue)")
+                isSearching = true
+                movieViewModel.fetchMovieList(query: newValue, page: 1)
+            }
         }
     }
 }
