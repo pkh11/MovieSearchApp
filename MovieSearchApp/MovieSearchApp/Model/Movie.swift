@@ -31,4 +31,13 @@ struct Movie: Codable, Identifiable {
         case actor
         case userRating
     }
+    
+    static let test = Movie(title: "래빗 아카데미: 미션! 부활절달걀 수호대",
+                            link: "https://movie.naver.com/movie/bi/mi/basic.nhn?code=218798",
+                            imageUrl: "https://ssl.pstatic.net/imgmovie/mdi/mit110/2187/218798_P01_160725.png",
+                            subTitle: "Rabbit Academy: <b>Mission</b> Eggpossible",
+                            pubDate: "2022",
+                            director: "우테 폰 뮌쇼폴|",
+                            actor: "",
+                            userRating: "0.00")
 }
