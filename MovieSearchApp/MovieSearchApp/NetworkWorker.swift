@@ -24,7 +24,8 @@ final class NetworkWorker {
         // query items
         let query = URLQueryItem(name: "query", value: query)
         let start = URLQueryItem(name: "start", value: "\(page)")
-        urlComponents?.queryItems = [query, start]
+        let display = URLQueryItem(name: "display", value: "\(20)")
+        urlComponents?.queryItems = [query, start, display]
         
         guard let url = urlComponents?.url else { return }
         
