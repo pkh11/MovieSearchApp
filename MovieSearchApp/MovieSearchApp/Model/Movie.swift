@@ -41,3 +41,12 @@ struct Movie: Codable, Identifiable {
                             actor: "",
                             userRating: "0.00")
 }
+
+extension Movie: Equatable {
+    public static func ==(lhs: Movie, rhs: Movie) -> Bool {
+        return lhs.title == rhs.title &&
+        lhs.link == rhs.link &&
+        lhs.subTitle == rhs.subTitle &&
+        lhs.imageUrl == rhs.imageUrl
+    }
+}
