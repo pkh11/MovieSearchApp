@@ -10,7 +10,7 @@ import Foundation
 struct Movie: Codable, Identifiable {
     let title: String
     let link: String
-    let image: String
+    let imageUrl: String
     let subTitle: String
     let pubDate: String
     let director: String
@@ -24,7 +24,7 @@ struct Movie: Codable, Identifiable {
     enum CodingKeys: String, CodingKey {
         case title
         case link
-        case image
+        case imageUrl = "image"
         case subTitle = "subtitle"
         case pubDate
         case director
